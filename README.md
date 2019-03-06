@@ -1,3 +1,17 @@
+# Steps to run the exercise
+NOTE: This project is built using IntelliJ Idea, Maven 3.6.0 and Java 1.8 on macOS Mojave 10.14.2. All its dependencies like spring-boot will be auto fetched.
+
+* Install Java (https://www.java.com/en/download/help/mac_install.xml)
+* Set JAVA_HOME (https://www.mkyong.com/java/how-to-set-java_home-environment-variable-on-mac-os-x/)
+* Install maven (https://maven.apache.org/install.html)
+* Set mvn in your executable path (export PATH=/Applications/apache-maven-3.6.0/bin/:$PATH)
+* Clone the source code on your local disk (git clone https://github.com/ahsancse2004/Bike-Share-Take-Home-Project.git)
+* Go to BikeShare directory (cd BikeShare/)
+* Build using Maven (mvn clean install)
+* Run using Java (java -jar target/BikeShareOnlineStore-1.0.0.jar)
+* Import postman collection in postman to test the different APIs (https://www.getpostman.com/postman)
+
+
 # Bike Share Take Home Project
 Bike Share take home project prompt
 
