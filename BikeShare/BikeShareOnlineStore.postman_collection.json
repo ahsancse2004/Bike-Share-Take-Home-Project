@@ -1,0 +1,393 @@
+{
+	"info": {
+		"_postman_id": "b4fe433c-864e-48f6-b6a2-656ead76c309",
+		"name": "BikeShareOnlineStore",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Fetch list of stations",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:8080/BikeShareOnlineStore/api/station/",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"BikeShareOnlineStore",
+						"api",
+						"station",
+						""
+					]
+				},
+				"description": "List all available stations"
+			},
+			"response": []
+		},
+		{
+			"name": "Fetch individual station by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:8080/BikeShareOnlineStore/api/station/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"BikeShareOnlineStore",
+						"api",
+						"station",
+						"1"
+					]
+				},
+				"description": "Fetches individual station by id"
+			},
+			"response": []
+		},
+		{
+			"name": "Create a station",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"capacity\":2,\n\t\"weight\":40,\n\t\"name\":\"Station 9\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8080/BikeShareOnlineStore/api/station/",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"BikeShareOnlineStore",
+						"api",
+						"station",
+						""
+					]
+				},
+				"description": "Create a station"
+			},
+			"response": []
+		},
+		{
+			"name": "Create a sponsor",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\":\"Sponsor E\"\t\n}"
+				},
+				"url": {
+					"raw": "localhost:8080/BikeShareOnlineStore/api/sponsor/",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"BikeShareOnlineStore",
+						"api",
+						"sponsor",
+						""
+					]
+				},
+				"description": "Create a sponsor"
+			},
+			"response": []
+		},
+		{
+			"name": "Fetch list of sponsors",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:8080/BikeShareOnlineStore/api/sponsor",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"BikeShareOnlineStore",
+						"api",
+						"sponsor"
+					]
+				},
+				"description": "Fetches list of sponsors"
+			},
+			"response": []
+		},
+		{
+			"name": "Add a sponsor to a station",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:8080/BikeShareOnlineStore/api/station/1/sponsor/5/",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"BikeShareOnlineStore",
+						"api",
+						"station",
+						"1",
+						"sponsor",
+						"5",
+						""
+					]
+				},
+				"description": "Adds a sponsor to a station. Both station and sponsors are validated"
+			},
+			"response": []
+		},
+		{
+			"name": "Remove a sponsor from a station.",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:8080/BikeShareOnlineStore/api/station/1/sponsor/5/",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"BikeShareOnlineStore",
+						"api",
+						"station",
+						"1",
+						"sponsor",
+						"5",
+						""
+					]
+				},
+				"description": "Removes a sponsor from a station"
+			},
+			"response": []
+		},
+		{
+			"name": "Create a bike",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\n}"
+				},
+				"url": {
+					"raw": "localhost:8080/BikeShareOnlineStore/api/bike",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"BikeShareOnlineStore",
+						"api",
+						"bike"
+					]
+				},
+				"description": "Adds a bike to a station. It returns the station id to identify which station the bike was added to."
+			},
+			"response": []
+		},
+		{
+			"name": "Fetch individual bike by id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\n}"
+				},
+				"url": {
+					"raw": "localhost:8080/BikeShareOnlineStore/api/bike/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"BikeShareOnlineStore",
+						"api",
+						"bike",
+						"1"
+					]
+				},
+				"description": "Fetches a bike given its id, it also shows the trip counter"
+			},
+			"response": []
+		},
+		{
+			"name": "Fetch list of bikes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:8080/BikeShareOnlineStore/api/bike",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"BikeShareOnlineStore",
+						"api",
+						"bike"
+					]
+				},
+				"description": "Gives list of all the bikes in the system"
+			},
+			"response": []
+		},
+		{
+			"name": "Checkout a bike from a station",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:8080/BikeShareOnlineStore/api/checkout/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"BikeShareOnlineStore",
+						"api",
+						"checkout",
+						"1"
+					]
+				},
+				"description": "Checkout a bike from a station. It gives the bike which can be referenced later on."
+			},
+			"response": []
+		},
+		{
+			"name": "Checkin a bike to a station",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\n}"
+				},
+				"url": {
+					"raw": "localhost:8080/BikeShareOnlineStore/api/checkin/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"BikeShareOnlineStore",
+						"api",
+						"checkin",
+						"1"
+					]
+				},
+				"description": "Return the given bike to any station. It gives the station in output"
+			},
+			"response": []
+		}
+	]
+}
